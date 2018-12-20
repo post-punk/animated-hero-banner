@@ -1,0 +1,77 @@
+.container {
+	width: 100%;
+
+}
+
+.hero-background-sunburst {
+  background: url('images/hero-background-sunburst.svg');
+	background-repeat: no-repeat;
+	position: relative;
+  background-attachment: fixed;
+  background-position: center center; 
+	margin-top: 200px;
+  height: 520px;
+} 
+
+.hero-background-sunburst:hover {
+}
+
+.hero-background-green {
+  background: url('images/hero-background-green.svg');
+	background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center; 
+	position: relative;
+	
+}
+
+.macbook {
+	width: 20%;
+	position: absolute;
+  bottom: 0;
+  left: 34%;
+	z-index: 1;
+
+}
+
+.macbook:hover {
+	transition: all .2s ease-in-out;
+  transform: scale(1.5);
+	transform-origin: bottom right;
+}
+
+.ipad {
+	width: 11%;
+	position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 2;
+}
+
+.ipad:hover {
+	transition: all .2s ease-in-out;
+  transform: scale(1.5);
+	transform-origin: bottom;
+}
+
+.iphone {
+	width: 5%;
+  position: absolute;
+  bottom: 0;
+  right: 35%;
+  z-index: 3;
+}
+
+.iphone:hover {
+	transition: all .2s ease-in-out;
+  transform: scale(1.9);
+	transform-origin: bottom right;
+}
+
+.bottom {
+	width: 33%;
+	margin-left: 33%;
+	position: absolute;
+  left: 0;
+  bottom: 0;
+}
