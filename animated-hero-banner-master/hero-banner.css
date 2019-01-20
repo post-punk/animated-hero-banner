@@ -1,0 +1,139 @@
+.container {
+	width: 100%;
+
+}
+
+.hero-background-sunburst {
+  background: url('images/banner-background-working.svg');
+	background-repeat: no-repeat;
+	position: relative;
+  background-attachment: center;
+  background-position: center; 
+	margin-top: 200px;
+  height: 600px;
+} 
+
+.hero-background-sunburst:hover {
+}
+
+.hero-background-green {
+  background: url('images/hero-background-green.svg');
+	background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center; 
+	position: relative;
+	
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.macbook {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.fade-in.ipad {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay:1.2s;
+  animation-delay: 1.2s;
+}
+
+.fade-in.iphone {
+  -webkit-animation-delay: 1.6s;
+  -moz-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+
+.macbook {
+	width: 20%;
+	position: absolute;
+  bottom: 17%;
+  left: 34%;
+	z-index: 1;
+
+}
+
+.macbook:hover {
+	transition: all .2s ease-in-out;
+  transform: scale(1.5);
+	transform-origin: bottom right;
+}
+
+.ipad {
+	width: 11%;
+	position: absolute;
+  bottom: 17%;
+  left: 50%;
+  z-index: 2;
+}
+
+.ipad:hover {
+	transition: all .2s ease-in-out;
+  transform: scale(1.5);
+	transform-origin: bottom;
+}
+
+.iphone {
+	width: 5%;
+  position: absolute;
+  bottom: 17%;
+  right: 35%;
+  z-index: 3;
+}
+
+.iphone:hover {
+	transition: all .2s ease-in-out;
+  transform: scale(1.9);
+	transform-origin: bottom right;
+}
+
+.bottom {
+	width: 33%;
+	margin-left: 33%;
+	position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.banner-paragraph p {
+	text-align: center;
+	bottom: 7%;
+	width: 100%;
+	position: absolute;
+}
+
+.portfolio {
+	width: 100%;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio button {
+	color: white;
+	text-align: center;
+	bottom: 3%;
+	display: inline;	
+	position: absolute;
+	background-color: #2ecc71;
+  padding: 10px 25px;
+}
